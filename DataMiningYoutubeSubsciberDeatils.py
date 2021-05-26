@@ -7,7 +7,7 @@ def getSubscriberDetails(developerKey, channelId, clientSecretFile):
     from googleapiclient.discovery import build
     from google_auth_oauthlib.flow import InstalledAppFlow
 
-    youtube = build('youtube', 'v3', developerKey=developerKey)  # getting the subscriberCount from channelsAPI
+    youtube = build('youtube', 'v3', developerKey=developerKey)  # getting the subscriberCount from channelsAPI 
     subcribersCount = youtube.channels().list(part='statistics', id=channelId).execute()['items'][0]['statistics'][
         'subscriberCount']  # UCnprfRlJB7WE6zAEaOAfVYA
     subcribersCount = (int(subcribersCount) // 10 + 1) * 10  # make it a multiple of ten

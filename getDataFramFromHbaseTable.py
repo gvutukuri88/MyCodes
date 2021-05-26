@@ -5,7 +5,7 @@ connection = happybase.Connection('localhost', autoconnect=False)
 connection.open()
 def retriveDataFrame(connection,tableName):
     try:
-        data = connection.table(tableName)  #get the table with tableName and connection
+        data = connection.table(tableName)  #get the table with tableName and connection 
         data=list(data.scan())  #gives the list to tuples which contains row index and dict of column names and values
         columns=list(data[0][1].keys())  #grab the first tuple from list of index 1 which gives the dict to get the column names
         columns=[col.decode().split(":")[1] for col in columns] #decode the names and name the list of columns
