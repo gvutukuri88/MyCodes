@@ -24,4 +24,3 @@ def retriveDataFrame(connection,tableName):
     except :
         "Error while creating the data frame"
 
-print(retriveDataFrame(connection,'youtubeComments'))
