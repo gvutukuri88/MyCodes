@@ -71,4 +71,4 @@ def getSubscriberDetails(developerKey, channelId, clientSecretFile):
 
     return subscriber_list
 
-print(getSubscriberDetails(developerKey='AIzaSyBpTWVW9z8nuPHvuVtxIyU6fOJqlSRVmiU',channelId='UCAmbsgvOnM6-9eU3GqI9mUQ',clientSecretFile="C:\\Users\\dell\\Downloads\\client_secret_936337865172-kk3hhfrak97bcpgqhs734o744r93o6sk.apps.googleusercontent.com.json"))
+print(getSubscriberDetails(developerKey='xxxx',channelId='xxxx',clientSecretFile="xxx"))
