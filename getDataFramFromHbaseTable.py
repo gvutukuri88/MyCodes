@@ -22,5 +22,5 @@ def retriveDataFrame(connection,tableName):
         df.sort_index(inplace=True)
         return df
     except :
-        "Error while creating the data frame"
+        return "Error while creating the data frame"
 
